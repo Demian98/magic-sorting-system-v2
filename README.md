@@ -252,6 +252,8 @@ See the [Groups](#groups) section below for a list of all 39 groups and to see h
 
 ### Misc Catch-All Group
 
+***Note: You need to rotate the item in the itemframe 3 times. Otherwise the itemframe will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
+
 All item groups ultimately fall back to a special [Misc](#misc) group, which is the universal "catch-all".  That is, if no suitable item frame can be found for an item, it will teleport to the miscellaneous group, which uses the [carrot on a stick](https://minecraft.gamepedia.com/Carrot_on_a_Stick) display item:
 
 ![Miscellaneous Group](https://pixlcore.com/software/mss/screenshots/misc-group.png)
