@@ -176,6 +176,8 @@ For a more advanced auto-controller, see the [Advanced](#advanced) section below
 
 ## Creating an Item Receiver
 
+***Note: You need to rotate the item in the itemframe 3 times. Otherwise the itemframe will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
+
 An "item receiver" is just an [item frame](https://minecraft.gamepedia.com/Item_Frame) that contains a special item which represents one of the [39 groups](#groups).  Then, all items to be sorted within that group will teleport to the item frame.  What happens then?  Well, it's actually entirely up to you!  But the most common thing is to simply place a [hopper](https://minecraft.gamepedia.com/Hopper) underneath the item frame, and route that to a nearby chest.  Example:
 
 ![Single Chest Receiver](https://pixlcore.com/software/mss/screenshots/single-chest.png)
@@ -186,6 +188,8 @@ In this example, the item frame contains a [block of cobblestone](https://minecr
 
 ### Multiple Chests
 
+***Note: You need to rotate the item in the itemframe 3 times. Otherwise the itemframe will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
+
 To handle item overflow, the best way is to simply build downward by adding more chests and hoppers directly beneath.  The hopper system in Minecraft seems to handle distribution by filling the topmost and bottommost chests evenly, working inwards as things fill up.  Example:
 
 ![Double Chest Receiver](https://pixlcore.com/software/mss/screenshots/double-chest.png)
@@ -193,6 +197,8 @@ To handle item overflow, the best way is to simply build downward by adding more
 There are, of course, a million different ways to solve this problem -- this is only one simple example.  But the idea with the magic sorting system is that it leaves things up to you!  It only teleports items to appropriate frames, but *you* can decide how to handle routing and storage.
 
 ### Multiple Item Frames
+
+***Note: You need to rotate the item in the itemframe 3 times. Otherwise the itemframe will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
 
 For high traffic groups such as [Stone](#stone), where a player might drop off a large number of item stacks at once, it is recommended that you use multiple item frames.  This is because a single hopper can only handle up to 5 stacks of items at one time.  If you drop off more all at once, your hopper might overflow and dump some items onto the floor before it can route them.  To handle this situation better, consider the following setup:
 
@@ -206,6 +212,8 @@ Also see the [Advanced](#advanced) section for another way to solve item overflo
 
 ### Automatic Smelting or Cooking
 
+***Note: You need to rotate the item in the itemframe 3 times. Otherwise the itemframe will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
+
 You can route your items into things other than chests -- you can also setup an easy auto-smelting system, for [ores](#ores) and/or [raw food](#raw).  Simply add an additional hopper under the item chest, and route it to a furnace on its top side:
 
 ![Ore Chest and Furnace](https://pixlcore.com/software/mss/screenshots/single-ore-single-furnace.png)
@@ -213,6 +221,8 @@ You can route your items into things other than chests -- you can also setup an 
 As you can see in the above example, you can also route the *output* of the furnace to another chest out the bottom, to hold your completed ingots or cooked food.
 
 ### Automatic Coal Fuel
+
+***Note: You need to rotate the item in the itemframe 3 times. Otherwise the itemframe will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
 
 Furnaces need fuel as well.  So taking this a step further, you can route the [Coal](#coal) item group into the *sides* of the furnace, to automatically supply it with fuel.  Here is a more complete example, with double item frames for handling many items at once:
 
@@ -225,6 +235,8 @@ So let's say you come home from a mining trip and have some raw ores, some coal,
 Remember that the magic sorting system will randomly pick item frames if multiple are available for a group.  So you can *also* have a [Coal](#coal) group with additional item frames routed to plain chests, and it'll balance between storing the coal in your chests, and fueling your auto-smelting system.
 
 ### Fallback Groups
+
+***Note: You need to rotate the item in the itemframe 3 times. Otherwise the itemframe will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
 
 Several of the item groups have sub-groups, which are optional and fall back to the main group if a more specific item frame isn't found.  For example, consider the following simple item receiver for the [Ocean](#ocean) group:
 
