@@ -176,7 +176,7 @@ For a more advanced auto-controller, see the [Advanced](#advanced) section below
 
 ## Creating an Item Receiver
 
-***Note: You need to rotate the item in the itemframe 3 times. Otherwise the itemframe will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
+***Note: You need to rotate the item in the item frame 3 times. Otherwise this item frame will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
 
 An "item receiver" is just an [item frame](https://minecraft.gamepedia.com/Item_Frame) that contains a special item which represents one of the [39 groups](#groups).  Then, all items to be sorted within that group will teleport to the item frame.  What happens then?  Well, it's actually entirely up to you!  But the most common thing is to simply place a [hopper](https://minecraft.gamepedia.com/Hopper) underneath the item frame, and route that to a nearby chest.  Example:
 
@@ -188,7 +188,7 @@ In this example, the item frame contains a [block of cobblestone](https://minecr
 
 ### Multiple Chests
 
-***Note: You need to rotate the item in the itemframe 3 times. Otherwise the itemframe will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
+***Note: You need to rotate the item in the item frame 3 times. Otherwise this item frame will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
 
 To handle item overflow, the best way is to simply build downward by adding more chests and hoppers directly beneath.  The hopper system in Minecraft seems to handle distribution by filling the topmost and bottommost chests evenly, working inwards as things fill up.  Example:
 
@@ -198,7 +198,7 @@ There are, of course, a million different ways to solve this problem -- this is 
 
 ### Multiple Item Frames
 
-***Note: You need to rotate the item in the itemframe 3 times. Otherwise the itemframe will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
+***Note: You need to rotate the item in the item frame 3 times. Otherwise this item frame will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
 
 For high traffic groups such as [Stone](#stone), where a player might drop off a large number of item stacks at once, it is recommended that you use multiple item frames.  This is because a single hopper can only handle up to 5 stacks of items at one time.  If you drop off more all at once, your hopper might overflow and dump some items onto the floor before it can route them.  To handle this situation better, consider the following setup:
 
@@ -212,7 +212,7 @@ Also see the [Advanced](#advanced) section for another way to solve item overflo
 
 ### Automatic Smelting or Cooking
 
-***Note: You need to rotate the item in the itemframe 3 times. Otherwise the itemframe will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
+***Note: You need to rotate the item in the item frame 3 times. Otherwise this item frame will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
 
 You can route your items into things other than chests -- you can also setup an easy auto-smelting system, for [ores](#ores) and/or [raw food](#raw).  Simply add an additional hopper under the item chest, and route it to a furnace on its top side:
 
@@ -222,7 +222,7 @@ As you can see in the above example, you can also route the *output* of the furn
 
 ### Automatic Coal Fuel
 
-***Note: You need to rotate the item in the itemframe 3 times. Otherwise the itemframe will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
+***Note: You need to rotate the item in the item frame 3 times. Otherwise this item frame will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
 
 Furnaces need fuel as well.  So taking this a step further, you can route the [Coal](#coal) item group into the *sides* of the furnace, to automatically supply it with fuel.  Here is a more complete example, with double item frames for handling many items at once:
 
@@ -252,7 +252,7 @@ See the [Groups](#groups) section below for a list of all 39 groups and to see h
 
 ### Misc Catch-All Group
 
-***Note: You need to rotate the item in the itemframe 3 times. Otherwise the itemframe will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
+***Note: You need to rotate the item in the item frame 3 times. Otherwise this item frame will be ignored. This feature will prevent conflicts with the other item frames in your world, that should not interact with the sorting system. I will update the screenshots and the guide here soon.***
 
 All item groups ultimately fall back to a special [Misc](#misc) group, which is the universal "catch-all".  That is, if no suitable item frame can be found for an item, it will teleport to the miscellaneous group, which uses the [carrot on a stick](https://minecraft.gamepedia.com/Carrot_on_a_Stick) display item:
 
